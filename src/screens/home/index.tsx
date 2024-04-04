@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 export default function Home() {
   return (
     <View style={styles.container}>
-      <StatusBar />
+      <StatusBar/>
       <Text style={styles.text}>Home</Text>
     </View>
   );
