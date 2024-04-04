@@ -1,6 +1,7 @@
 import { ComponentType } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
+// Icons
 import { FontAwesome } from "@expo/vector-icons";
 
 import { theme } from "../../../theme";

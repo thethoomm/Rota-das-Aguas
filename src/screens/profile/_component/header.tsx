@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View } from "react-native"
+
 import { Avatar } from "../../../components/avatar"
+
 import { theme } from "../../../theme"
 
 interface HeaderProps {
@@ -14,6 +16,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 28,
   },
   headerAvatar: {
     justifyContent: 'center',

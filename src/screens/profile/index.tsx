@@ -1,10 +1,15 @@
 import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
-import { Header, HeaderAvatar, HeaderTitle } from './_component/header';
-import { theme } from '../../theme';
 import { StatusBar } from 'expo-status-bar';
-import { profileOptions } from '../../utils/profile-options';
-import Card from './_component/card';
+
+// Icons
 import { Feather } from '@expo/vector-icons';
+
+// Components
+import Card from './_component/card';
+import { Header, HeaderAvatar, HeaderTitle } from './_component/header';
+
+import { theme } from '../../theme';
+import { profileOptions } from '../../utils/profile-options';
 
 export default function Profile() {
   return (
@@ -36,7 +41,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.color.white,
     paddingTop: 80,
     paddingBottom: 20,
-    paddingHorizontal: 16,
+    paddingHorizontal: 32,
   },
   optionList: {
     flex: 1,
