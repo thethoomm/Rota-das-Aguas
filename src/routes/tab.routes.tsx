@@ -8,20 +8,31 @@ import Home from '../screens/home'
 import Profile from '../screens/profile'
 import Routes from '../screens/routes'
 import Saved from '../screens/saved'
+import { theme } from '../theme'
 
 const Tab = createBottomTabNavigator()
 
 export default function TabRoutes() {
   return (
     <Tab.Navigator screenOptions={{
-      headerShown: false
+      headerShown: false,
+      tabBarStyle: {
+        height: 64,
+      },
+      tabBarLabelStyle: {
+        fontSize: 14,
+        fontWeight: '500',
+        marginTop: -4,
+        marginBottom: 7
+      },
+      tabBarActiveTintColor: theme.color.primary
     }}>
       <Tab.Screen
         name='home'
         component={Home}
         options={{
           tabBarIcon: ({ color, size }) => <Feather name='home' color={color} size={size} />,
-          tabBarLabel: 'Início'
+          tabBarLabel: 'Início',
         }} />
       <Tab.Screen
         name='routes'
