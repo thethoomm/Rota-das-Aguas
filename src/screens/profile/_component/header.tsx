@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     textAlignVertical: 'center',
     fontSize: theme.fontSize.xl,
     fontWeight: 'bold',
-    color: theme.color.gray[600]
+    color: theme.color.gray[600],
+    textTransform: 'uppercase'
   }
 })
 
