@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
-import { theme } from '../theme';
+import { theme } from '../../theme';
 import { StatusBar } from 'expo-status-bar';
 
 export default function Saved() {
