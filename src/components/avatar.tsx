@@ -10,7 +10,7 @@ export function Avatar({ size = 50 }: AvatarProps) {
       <Image 
       style={{ width: size, height: size, borderRadius: 100 }}
       source={{
-        uri: 'https://api.dicebear.com/8.x/thumbs/png'
+        uri: 'https://api.dicebear.com/8.x/thumbs/png?seed=Cuddles'
       }} />
     </View>
   )
