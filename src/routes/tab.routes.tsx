@@ -20,8 +20,7 @@ export default function TabRoutes() {
         height: 64,
       },
       tabBarLabelStyle: {
-        fontSize: 14,
-        fontWeight: '500',
+        fontSize: 12,
         marginTop: -4,
         marginBottom: 7
       },
