@@ -1,6 +1,6 @@
-import { OptionType } from "../screens/profile/_component/card"
+import { OptionType } from "@/types/profile-option"
 
-export const profileOptions: OptionType[] = [
+export const commonOptions: OptionType[] = [
   {
     id: 1,
     title: 'Viagens',

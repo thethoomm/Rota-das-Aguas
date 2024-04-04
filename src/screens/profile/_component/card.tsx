@@ -1,23 +1,18 @@
-import { ComponentType } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 // Icons
 import { FontAwesome } from "@expo/vector-icons";
 
-import { theme } from "../../../theme";
-import { useNavigation } from '@react-navigation/native';
-import { RootStackNavigationParamsList } from '../../../routes/stack.routes';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
 
-type IconProps =  typeof FontAwesome extends ComponentType<infer P> ? P : never;
+import { RootStackNavigationParamsList } from '../../../routes/stack.routes';
 
-export type OptionType = {
-  id: number
-  title: string
-  description: string
-  icon: IconProps['name']
-  ref: keyof RootStackNavigationParamsList
-}
+import { OptionType } from '../../../types/profile-option';
+
+import { theme } from "../../../theme";
+
+
 
 interface CardProps {
   option: OptionType

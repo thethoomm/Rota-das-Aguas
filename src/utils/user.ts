@@ -9,5 +9,5 @@ export const user: UserType = {
   id: 'b7h0Pa',
   name: 'Thomas Henrique',
   email: 'thomas@gmail.com',
-  type: "common"
+  type: "producer"
 }
