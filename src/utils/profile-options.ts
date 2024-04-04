@@ -6,11 +6,13 @@ export const profileOptions: OptionType[] = [
     title: 'Viagens',
     description: 'Minhas viagens já feitas',
     icon: 'car',
+    ref: 'trips'
   },
   {
     id: 2,
     title: 'Dados da conta',
     description: 'Minhas informações pessoais',
     icon: 'sliders',
+    ref: 'accountDetails'
   }
 ]

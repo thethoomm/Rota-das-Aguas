@@ -14,7 +14,7 @@ import { profileOptions } from '../../utils/profile-options';
 export default function Profile() {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar animated />
+      <StatusBar />
       <Header>
         <HeaderAvatar />
         <HeaderTitle title='Thomas Henrique' />
