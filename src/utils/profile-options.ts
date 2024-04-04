@@ -10,7 +10,7 @@ export const profileOptions: OptionType[] = [
   },
   {
     id: 2,
-    title: 'Dados da conta',
+    title: 'Configurações',
     description: 'Minhas informações pessoais',
     icon: 'sliders',
     ref: 'accountDetails'
