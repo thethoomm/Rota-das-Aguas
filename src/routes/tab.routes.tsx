@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 //Icons
-import { Feather } from '@expo/vector-icons'
+import { Ionicons } from '@expo/vector-icons'
 
 // Screens
 import Home from '../screens/home'
@@ -25,34 +25,35 @@ export default function TabRoutes() {
         marginTop: -4,
         marginBottom: 7
       },
-      tabBarActiveTintColor: theme.color.primary
+      tabBarActiveTintColor: theme.color.primary,
+      tabBarInactiveTintColor: theme.color.gray[400],
     }}>
       <Tab.Screen
         name='home'
         component={Home}
         options={{
-          tabBarIcon: ({ color, size }) => <Feather name='home' color={color} size={size} />,
+          tabBarIcon: ({ color, size, focused }) => <Ionicons name={focused ? 'home' : 'home-outline'} color={color} size={size} />,
           tabBarLabel: 'Início',
         }} />
       <Tab.Screen
         name='routes'
         component={Routes}
         options={{
-          tabBarIcon: ({ color, size }) => <Feather name='map-pin' color={color} size={size}/>,
+          tabBarIcon: ({ color, size, focused }) => <Ionicons name={focused ? 'map' : 'map-outline'} color={color} size={size}/>,
           tabBarLabel: 'Rotas'
         }} />
       <Tab.Screen
         name='saved'
         component={Saved}
         options={{
-          tabBarIcon: ({ color, size }) => <Feather name='bookmark' color={color} size={size} />,
+          tabBarIcon: ({ color, size, focused }) => <Ionicons name={focused ? 'bookmark' : 'bookmark-outline'} color={color} size={size} />,
           tabBarLabel: 'Salvos'
         }} />
         <Tab.Screen
           name='profile'
           component={Profile}
           options={{
-            tabBarIcon: ({ color, size }) => <Feather name='user' color={color} size={size} />,
+            tabBarIcon: ({ color, size, focused }) => <Ionicons name={focused ? 'person' : 'person-outline'} color={color} size={size} />,
             tabBarLabel: 'Perfil'
           }} />
     </Tab.Navigator>
