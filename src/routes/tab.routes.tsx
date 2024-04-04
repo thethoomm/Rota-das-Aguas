@@ -18,6 +18,9 @@ export default function TabRoutes() {
       headerShown: false,
       tabBarStyle: {
         height: 64,
+        borderTopWidth: 0,
+        elevation: 0,
+        backgroundColor: theme.color.white
       },
       tabBarLabelStyle: {
         fontSize: 12,
