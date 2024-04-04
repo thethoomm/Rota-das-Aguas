@@ -20,7 +20,7 @@ export default function StackRoutes() {
     }}>
       <Stack.Screen name='login' component={Login}/>
       <Stack.Screen name='signup' component={SignUp}/>
-      <Stack.Screen name='tabs' component={TabRoutes} />
+      <Stack.Screen name='tabs' component={TabRoutes}/>
     </Stack.Navigator>
   )
 }

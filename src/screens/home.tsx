@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { theme } from '../theme';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Home() {
   return (
     <View style={styles.container}>
+      <StatusBar />
       <Text style={styles.text}>Home</Text>
     </View>
   );
