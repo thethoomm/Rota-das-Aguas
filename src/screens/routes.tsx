@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { theme } from '../theme';
 
 export default function Routes() {
   return (
@@ -13,7 +14,7 @@ export default function Routes() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: theme.color.white,
     alignItems: 'center',
     justifyContent: 'center',
   },
