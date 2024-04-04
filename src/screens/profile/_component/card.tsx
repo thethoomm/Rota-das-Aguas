@@ -5,6 +5,9 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 import { theme } from "../../../theme";
+import { useNavigation } from '@react-navigation/native';
+import { RootStackNavigationParamsList } from '../../../routes/stack.routes';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 type IconProps =  typeof FontAwesome extends ComponentType<infer P> ? P : never;
 
@@ -13,6 +16,7 @@ export type OptionType = {
   title: string
   description: string
   icon: IconProps['name']
+  ref: keyof RootStackNavigationParamsList
 }
 
 interface CardProps {
@@ -20,8 +24,13 @@ interface CardProps {
 }
 
 export default function Card({ option }: CardProps) {
+
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackNavigationParamsList>>()
+
   return (
-    <TouchableOpacity style={styles.container} activeOpacity={0.5}>
+    <TouchableOpacity style={styles.container} activeOpacity={0.5} onPress={() => {
+      navigation.navigate(option.ref)
+    }}>
       <FontAwesome name={option.icon} color={theme.color.gray[600]} size={20} />
       <View style={styles.content}>
         <Text style={styles.title}>{option.title}</Text>
