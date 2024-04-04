@@ -4,8 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
 
 // Screens
-import Profile from '../../screens/profile'
-import { theme } from '../../theme'
+import Profile from '@/screens/profile'
+import { theme } from '@/theme'
 
 const Tab = createBottomTabNavigator()
 

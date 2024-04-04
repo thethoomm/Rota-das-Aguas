@@ -6,11 +6,11 @@ import { FontAwesome } from "@expo/vector-icons";
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
 
-import { RootStackNavigationParamsList } from '../../../routes/stack.routes';
+import { RootStackNavigationParamsList } from '@/routes/stack.routes';
 
-import { OptionType } from '../../../types/profile-option';
+import { OptionType } from '@/types/profile-option';
 
-import { theme } from "../../../theme";
+import { theme } from "@/theme";
 
 
 

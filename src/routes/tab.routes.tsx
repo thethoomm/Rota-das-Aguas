@@ -1,7 +1,7 @@
-import { CommonTabs } from './common'
+import { CommonTabs } from '@/routes/common'
+import { ProducerTabs } from '@/routes/producer'
 
-import { user } from '../utils/user'
-import { ProducerTabs } from './producer'
+import { user } from '@/utils/user'
 
 export default function TabRoutes() {
   switch (user.type) {

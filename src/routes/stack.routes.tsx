@@ -1,13 +1,13 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 // Screens
-import Login from '../screens/auth/login'
-import SignUp from '../screens/auth/signup'
+import Login from '@/screens/auth/login'
+import SignUp from '@/screens/auth/signup'
+import AccountDetails from '@/screens/profile/_screens/account-details'
+import Trips from '@/screens/profile/_screens/trips'
 import TabRoutes from './tab.routes'
-import AccountDetails from '../screens/profile/_screens/account-details'
-import Trips from '../screens/profile/_screens/trips'
-import { theme } from '../theme'
-import { Feather } from '@expo/vector-icons'
+
+import { theme } from '@/theme'
 
 export type RootStackNavigationParamsList = {
   // Root Stack

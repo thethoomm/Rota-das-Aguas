@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View } from "react-native"
 
-import { Avatar } from "../../../components/avatar"
+import { Avatar } from "@/components/avatar"
 
-import { theme } from "../../../theme"
+import { theme } from "@/theme"
 
 interface HeaderProps {
   children: React.ReactNode

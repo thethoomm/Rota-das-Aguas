@@ -6,14 +6,16 @@ import { StatusBar } from 'expo-status-bar';
 import { Feather } from '@expo/vector-icons';
 
 // Components
-import Card from './_component/card';
-import { Header, HeaderAvatar, HeaderTitle } from './_component/header';
+import Card from '@/screens/profile/_component/card';
+import { Header, HeaderAvatar, HeaderTitle } from '@/screens/profile/_component/header';
 
-import { theme } from '../../theme';
-import { commonOptions } from '../../utils/common-options';
+// Utils
+import { commonOptions } from '@/utils/common-options';
 import { user } from '@/utils/user';
 import { OptionType } from '@/types/profile-option';
 import { producerOptions } from '@/utils/producer-options';
+
+import { theme } from '@/theme';
 
 export default function Profile() {
 
