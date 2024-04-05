@@ -46,7 +46,7 @@ export default function Profile() {
       <StatusBar />
       <Header>
         <HeaderAvatar />
-        <HeaderTitle title='Thomas Henrique' />
+        <HeaderTitle title={user.name} />
       </Header>
 
       <ScrollView style={styles.optionList}>
