@@ -6,6 +6,9 @@ import { StatusBar } from 'expo-status-bar';
 import { LoginForm } from '@/screens/auth/login/_components/loginForm'
 
 import { RootStackNavigationParamsList } from '@/routes/stack.routes';
+import { getLocal } from '@/services/local-storage';
+import { useEffect, useState } from 'react';
+import { User } from '@/types/user';
 
 export default function Login() {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackNavigationParamsList>>()
@@ -17,6 +20,7 @@ export default function Login() {
       <LoginForm />
       <Button title='Go to Home' onPress={() => navigation.navigate('tabs')}/>
       <Button title='Go to SignUp' onPress={() => navigation.navigate('signup')}/>
+
     </View>
   );
 }

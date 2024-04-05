@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import { View, TextInput, StyleSheet, Button, Alert } from 'react-native'
+import { View, TextInput, StyleSheet, Button, Alert, Text } from 'react-native'
+
+import { useAuth } from '@/contexts/auth'
 
 import { auth } from '@/services/firebase'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
@@ -25,6 +27,8 @@ const styles = StyleSheet.create({
 })
 
 export function LoginForm() {
+  const { user } = useAuth()
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -48,6 +52,7 @@ export function LoginForm() {
       <TextInput style={styles.input} placeholder='Email' onChangeText={setEmail} />
       <TextInput style={styles.input} placeholder='Senha' secureTextEntry onChangeText={setPassword} />
       <Button title='Cadastrar' onPress={handleNewAccount} />
+      <Text>{user?.email}, {user?.uid}</Text>
     </View>
   )
 }
