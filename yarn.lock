@@ -2958,14 +2958,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-async-storage/async-storage@npm:1.21.0":
-  version: 1.21.0
-  resolution: "@react-native-async-storage/async-storage@npm:1.21.0"
+"@react-native-async-storage/async-storage@npm:^1.23.1":
+  version: 1.23.1
+  resolution: "@react-native-async-storage/async-storage@npm:1.23.1"
   dependencies:
     merge-options: ^3.0.4
   peerDependencies:
     react-native: ^0.0.0-0 || >=0.60 <1.0
-  checksum: 969cdeb444a037087b1897553082e148e25c8331055dd0dc142f76deeb4aadd9ed5ec26926ae990b3e9ff088396e74ab557148a2dd2a7db86058051b774f2619
+  checksum: 7096546ed4a5faf1f6e0425e2e15713575f1a7493a04524da386ff35c3844b57b8fd20544fad4157b4a61e048b10235f2f06124f262da5b327edc74fbc31e02b
   languageName: node
   linkType: hard
 
@@ -8536,7 +8536,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.20.0
     "@expo/vector-icons": ^14.0.0
-    "@react-native-async-storage/async-storage": 1.21.0
+    "@react-native-async-storage/async-storage": ^1.23.1
     "@react-navigation/bottom-tabs": ^6.5.20
     "@react-navigation/native": ^6.1.17
     "@react-navigation/native-stack": ^6.9.26
