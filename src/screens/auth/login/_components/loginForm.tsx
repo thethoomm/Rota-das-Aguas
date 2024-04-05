@@ -7,7 +7,7 @@ import { auth } from '@/services/firebase'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 
 import { theme } from '@/theme'
-import { getLocal, storeLocal } from '@/services/local-storage'
+import { storeLocal } from '@/services/local-storage'
 import { User } from '@/types/user'
 
 const styles = StyleSheet.create({
