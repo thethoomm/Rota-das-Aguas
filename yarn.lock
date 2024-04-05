@@ -2536,6 +2536,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-firebase/auth@npm:^19.1.2":
+  version: 19.1.2
+  resolution: "@react-native-firebase/auth@npm:19.1.2"
+  dependencies:
+    plist: ^3.1.0
+  peerDependencies:
+    "@react-native-firebase/app": 19.1.2
+    expo: ">=47.0.0"
+  peerDependenciesMeta:
+    expo:
+      optional: true
+  checksum: 164104bccf29c9d5d2697914e44bbbabae5d670842cf0f2c7d380ccb61d46555ee40868fff27bcbf38c89801a32d5089c10a5171dc36d237d69c95948bceca1c
+  languageName: node
+  linkType: hard
+
 "@react-native/assets-registry@npm:0.73.1, @react-native/assets-registry@npm:~0.73.1":
   version: 0.73.1
   resolution: "@react-native/assets-registry@npm:0.73.1"
@@ -7238,7 +7253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plist@npm:^3.0.5":
+"plist@npm:^3.0.5, plist@npm:^3.1.0":
   version: 3.1.0
   resolution: "plist@npm:3.1.0"
   dependencies:
@@ -7888,6 +7903,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@expo/vector-icons": ^14.0.0
     "@react-native-firebase/app": ^19.1.2
+    "@react-native-firebase/auth": ^19.1.2
     "@react-navigation/bottom-tabs": ^6.5.20
     "@react-navigation/native": ^6.1.17
     "@react-navigation/native-stack": ^6.9.26
