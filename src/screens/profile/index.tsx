@@ -56,7 +56,7 @@ export default function Profile() {
           ))
         }
         <TouchableOpacity style={styles.logoutButton} activeOpacity={0.8}>
-          <Feather name='log-out' color={theme.color.white} size={20} />
+          <Feather name='log-out' color={theme.color.destructive} size={20} />
           <Text style={styles.logoutText}>Sair da conta</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -76,7 +76,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   logoutButton: {
-    backgroundColor: theme.color.destructive,
+    borderWidth: 1,
+    borderColor: theme.color.destructive,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
   },
   logoutText: {
     fontSize: theme.fontSize.md,
-    color: theme.color.white,
+    color: theme.color.destructive,
     fontWeight: '600'
   }
 });
