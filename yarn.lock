@@ -3473,6 +3473,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/geojson@npm:^7946.0.13":
+  version: 7946.0.14
+  resolution: "@types/geojson@npm:7946.0.14"
+  checksum: ae511bee6488ae3bd5a3a3347aedb0371e997b14225b8983679284e22fa4ebd88627c6e3ff8b08bf4cc35068cb29310c89427311ffc9322c255615821a922e71
+  languageName: node
+  linkType: hard
+
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0":
   version: 2.0.6
   resolution: "@types/istanbul-lib-coverage@npm:2.0.6"
@@ -8138,6 +8145,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-maps@npm:1.10.0":
+  version: 1.10.0
+  resolution: "react-native-maps@npm:1.10.0"
+  dependencies:
+    "@types/geojson": ^7946.0.13
+  peerDependencies:
+    react: ">= 17.0.1"
+    react-native: ">= 0.64.3"
+    react-native-web: ">= 0.11"
+  peerDependenciesMeta:
+    react-native-web:
+      optional: true
+  checksum: fa451a6c1d8bd69c1f2185d409b4e7c64d12a23d75e8af35cf519ef87dc86804f120e72ca4e3cf2b53c998a634f67fcdb31dd0e6364558f4d614fb37aacfe28b
+  languageName: node
+  linkType: hard
+
 "react-native-safe-area-context@npm:4.8.2":
   version: 4.8.2
   resolution: "react-native-safe-area-context@npm:4.8.2"
@@ -8546,6 +8569,7 @@ __metadata:
     firebase: ^10.10.0
     react: 18.2.0
     react-native: 0.73.6
+    react-native-maps: 1.10.0
     react-native-safe-area-context: 4.8.2
     react-native-screens: ~3.29.0
     typescript: ^5.1.3
