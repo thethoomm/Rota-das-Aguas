@@ -23,7 +23,8 @@ export function CommonTabs() {
         backgroundColor: theme.color.white
       },
       tabBarLabelStyle: {
-        fontSize: 12,
+        fontFamily: theme.font.bold,
+        fontSize: theme.fontSize.xs,
         marginTop: -4,
         marginBottom: 7
       },
