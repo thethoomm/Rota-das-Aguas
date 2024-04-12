@@ -1,6 +1,6 @@
 import { theme } from "@/theme"
 import { Feather } from "@expo/vector-icons"
-import { StyleSheet, TextInput, View } from "react-native"
+import { StyleSheet, TextInput, KeyboardAvoidingView } from "react-native"
 
 interface InputIconProps {
   placeholder: string
@@ -9,14 +9,14 @@ interface InputIconProps {
 
 export function InputIcon({ placeholder, icon }: InputIconProps) {
   return (
-    <View style={styles.searchSection}>
+    <KeyboardAvoidingView style={styles.searchSection}>
       <Feather style={styles.searchIcon} name={icon} size={20} />
       <TextInput
         style={styles.input}
         placeholder={placeholder}
         underlineColorAndroid="transparent"
       />
-    </View>
+    </KeyboardAvoidingView>
   )
 }
 
@@ -41,5 +41,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     paddingLeft: 0,
     color: theme.color.gray[600],
+    fontSize: theme.fontSize.xs,
+    fontFamily: theme.font.normal
   },
 })
