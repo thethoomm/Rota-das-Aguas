@@ -1695,6 +1695,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo-google-fonts/inter@npm:^0.2.3":
+  version: 0.2.3
+  resolution: "@expo-google-fonts/inter@npm:0.2.3"
+  checksum: eb6e971e250657df329708e91d32baebbd28e7da39d013fc71920c30d2fb91db4365a6055f57a93d7373c2f8332d7f1c48b3e0e7e82f349ed8b4de8dcb210b46
+  languageName: node
+  linkType: hard
+
 "@expo/bunyan@npm:^4.0.0":
   version: 4.0.0
   resolution: "@expo/bunyan@npm:4.0.0"
@@ -8558,6 +8565,7 @@ __metadata:
   resolution: "rota-das-aguas@workspace:."
   dependencies:
     "@babel/core": ^7.20.0
+    "@expo-google-fonts/inter": ^0.2.3
     "@expo/vector-icons": ^14.0.0
     "@react-native-async-storage/async-storage": ^1.23.1
     "@react-navigation/bottom-tabs": ^6.5.20
@@ -8565,6 +8573,7 @@ __metadata:
     "@react-navigation/native-stack": ^6.9.26
     "@types/react": ~18.2.45
     expo: ~50.0.14
+    expo-font: ~11.10.3
     expo-status-bar: ~1.11.1
     firebase: ^10.10.0
     react: 18.2.0
